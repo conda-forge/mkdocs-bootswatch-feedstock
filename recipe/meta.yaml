@@ -1,47 +1,47 @@
 {% set version = "0.4.0" %}
 
 package:
-    name: mkdocs-bootswatch
-    version: {{ version }}
+  name: mkdocs-bootswatch
+  version: {{ version }}
 
 source:
-    fn: mkdocs-bootswatch-{{ version }}.tar.gz
-    url: https://pypi.python.org/packages/source/m/mkdocs-bootswatch/mkdocs-bootswatch-{{ version }}.tar.gz
-    md5: 9761b14bb6745074932c3a79ea395911
+  fn: mkdocs-bootswatch-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/m/mkdocs-bootswatch/mkdocs-bootswatch-{{ version }}.tar.gz
+  sha256: f8036ff93134ee3a45da255d75c12b4cd35e4c684c77bcee6b7779d45887d218
 
 build:
-    number: 0
-    script: python setup.py install --single-version-externally-managed --record record.txt
-    preserve_egg_dir: True
+  number: 0
+  script: python setup.py install --single-version-externally-managed --record record.txt
+  preserve_egg_dir: True
 
 requirements:
-    build:
-        - python
-        - setuptools
-    run:
-        - python
+  build:
+    - python
+    - setuptools
+  run:
+    - python
 
 test:
-    imports:
-        - mkdocs_bootswatch
-        - mkdocs_bootswatch.amelia
-        - mkdocs_bootswatch.cerulean
-        - mkdocs_bootswatch.cosmo
-        - mkdocs_bootswatch.cyborg
-        - mkdocs_bootswatch.flatly
-        - mkdocs_bootswatch.journal
-        - mkdocs_bootswatch.readable
-        - mkdocs_bootswatch.simplex
-        - mkdocs_bootswatch.slate
-        - mkdocs_bootswatch.spacelab
-        - mkdocs_bootswatch.united
-        - mkdocs_bootswatch.yeti
+  imports:
+    - mkdocs_bootswatch
+    - mkdocs_bootswatch.amelia
+    - mkdocs_bootswatch.cerulean
+    - mkdocs_bootswatch.cosmo
+    - mkdocs_bootswatch.cyborg
+    - mkdocs_bootswatch.flatly
+    - mkdocs_bootswatch.journal
+    - mkdocs_bootswatch.readable
+    - mkdocs_bootswatch.simplex
+    - mkdocs_bootswatch.slate
+    - mkdocs_bootswatch.spacelab
+    - mkdocs_bootswatch.united
+    - mkdocs_bootswatch.yeti
 
 about:
-    home: http://www.mkdocs.org
-    license: BSD-2-Clause
-    summary: Bootswatch themes for MkDocs
+  home: http://www.mkdocs.org
+  license: BSD 2-Clause
+  summary: 'Bootswatch themes for MkDocs'
 
 extra:
-    recipe-maintainers:
-        - ocefpaf
+  recipe-maintainers:
+    - ocefpaf
