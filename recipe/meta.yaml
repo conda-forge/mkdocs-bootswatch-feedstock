@@ -1,23 +1,22 @@
-{% set version = "0.4.0" %}
+{% set version = "0.5.0" %}
 
 package:
   name: mkdocs-bootswatch
   version: {{ version }}
 
 source:
-  fn: mkdocs-bootswatch-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/m/mkdocs-bootswatch/mkdocs-bootswatch-{{ version }}.tar.gz
-  sha256: f8036ff93134ee3a45da255d75c12b4cd35e4c684c77bcee6b7779d45887d218
+  sha256: 4efadca1d3919f02515ed1135221b46be0af94f4b3f99e5f001404d371006574
 
 build:
   number: 0
-  script: python setup.py install --single-version-externally-managed --record record.txt
-  preserve_egg_dir: True
+  noarch: python
+  script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
   build:
     - python
-    - setuptools
+    - pip
   run:
     - python
 
