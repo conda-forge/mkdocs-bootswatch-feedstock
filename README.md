@@ -14,12 +14,15 @@ Summary: Bootswatch themes for MkDocs
 Current build status
 ====================
 
-All platforms: [![Circle CI](https://circleci.com/gh/conda-forge/mkdocs-bootswatch-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/mkdocs-bootswatch-feedstock)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/mkdocs-bootswatch-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/mkdocs-bootswatch-feedstock)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/mkdocs-bootswatch/badges/version.svg)](https://anaconda.org/conda-forge/mkdocs-bootswatch)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/mkdocs-bootswatch/badges/downloads.svg)](https://anaconda.org/conda-forge/mkdocs-bootswatch)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-mkdocs--bootswatch-green.svg)](https://anaconda.org/conda-forge/mkdocs-bootswatch) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/mkdocs-bootswatch.svg)](https://anaconda.org/conda-forge/mkdocs-bootswatch) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/mkdocs-bootswatch.svg)](https://anaconda.org/conda-forge/mkdocs-bootswatch) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/mkdocs-bootswatch.svg)](https://anaconda.org/conda-forge/mkdocs-bootswatch) |
 
 Installing mkdocs-bootswatch
 ============================
