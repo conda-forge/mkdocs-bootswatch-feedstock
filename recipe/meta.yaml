@@ -1,4 +1,4 @@
-{% set version = "1.0" %}
+{% set version = "1.1" %}
 
 package:
   name: mkdocs-bootswatch
@@ -6,12 +6,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/m/mkdocs-bootswatch/mkdocs-bootswatch-{{ version }}.tar.gz
-  sha256: 6be56764675814036a507d32828710e93dbe3e7aced2cdd820b946a3ebf2308e
+  sha256: cc999ba15a3ce2a46eab35fcaabea9907f5c74bc49e79d9c866b51d4b0fa7f33
 
 build:
   number: 0
   noarch: python
-  script: python -m pip install --no-deps --ignore-installed .
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   build:
@@ -39,6 +39,7 @@ test:
 about:
   home: http://www.mkdocs.org
   license: BSD 2-Clause
+  license_file: LICENSE
   summary: 'Bootswatch themes for MkDocs'
 
 extra:
