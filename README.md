@@ -3,7 +3,7 @@ About mkdocs-bootswatch
 
 Home: http://www.mkdocs.org
 
-Package license: BSD 2-Clause
+Package license: BSD-2-Clause
 
 Feedstock license: BSD 3-Clause
 
